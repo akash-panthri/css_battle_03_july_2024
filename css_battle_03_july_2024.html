@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <style>
+      * {
+        position: relative;
+        background: #be3184;
+      }
+      div {
+        position: absolute;
+        top: 102px;
+        left: 112px;
+        width: 160px;
+        height: 80px;
+        background: #611b3f;
+      }
+      div::after,
+      div::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 160px;
+        width: 80px;
+        height: 80px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        background: #611b3f;
+      }
+      div::after {
+        top: 40px;
+        left: -80px;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </body>
+</html>
